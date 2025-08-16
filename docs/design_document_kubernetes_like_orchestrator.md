@@ -1,6 +1,6 @@
 # Design Document — Kubernetes-like Orchestrator
 
-**Author:** Souvik Bose & Assistant
+**Author:** Assistant
 **Date:** 2025-08-11
 
 ---
