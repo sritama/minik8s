@@ -1,0 +1,50 @@
+{
+  "apiVersion": "v1alpha1",
+  "kind": "Node",
+  "metadata": {
+    "name": "worker-node-1",
+    "labels": {
+      "node-role": "worker",
+      "zone": "us-west-1a"
+    }
+  },
+  "spec": {
+    "podCIDR": "10.244.0.0/24",
+    "unschedulable": false
+  },
+  "status": {
+    "capacity": {
+      "cpu": "4",
+      "memory": "8Gi"
+    },
+    "allocatable": {
+      "cpu": "4",
+      "memory": "8Gi"
+    },
+    "conditions": [
+      {
+        "type": "Ready",
+        "status": "True",
+        "lastHeartbeatTime": "2025-01-11T10:00:00Z",
+        "lastTransitionTime": "2025-01-11T10:00:00Z"
+      }
+    ],
+    "addresses": [
+      {
+        "type": "InternalIP",
+        "address": "192.168.1.100"
+      }
+    ],
+    "nodeInfo": {
+      "machineID": "machine-123",
+      "systemUUID": "uuid-123",
+      "bootID": "boot-123",
+      "kernelVersion": "5.15.0",
+      "osImage": "Ubuntu 22.04",
+      "containerRuntimeVersion": "containerd://1.7.0",
+      "kubeletVersion": "v1.0.0",
+      "operatingSystem": "linux",
+      "architecture": "amd64"
+    }
+  }
+} 
